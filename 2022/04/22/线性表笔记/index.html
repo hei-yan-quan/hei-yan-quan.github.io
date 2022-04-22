@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="线性表线性表的链式存储结构称为线性链表，为了适应线性表的链式存储结构，计算机存储空间被划分为一个一个小块，每一小块占若干字节，通常称这些小块为存储结点。每一个存储结点分为两部分：一部分用于存储数据元素的值，称为数据域；另一部分用于存放下一个数据元素的存储序号，即指向后件的结点，称为指针域。在链式存储结构中，存储数据结构的存储空间可以不连续，各数据结点的存储顺序与数据元素之间的逻辑关系可以不一致。因">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2022/04/22/%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="线性表线性表的链式存储结构称为线性链表，为了适应线性表的链式存储结构，计算机存储空间被划分为一个一个小块，每一小块占若干字节，通常称这些小块为存储结点。每一个存储结点分为两部分：一部分用于存储数据元素的值，称为数据域；另一部分用于存放下一个数据元素的存储序号，即指向后件的结点，称为指针域。在链式存储结构中，存储数据结构的存储空间可以不连续，各数据结点的存储顺序与数据元素之间的逻辑关系可以不一致。因">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-04-22T11:16:11.193Z">
+<meta property="article:modified_time" content="2022-03-04T04:10:33.152Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-线性表笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/22/%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time class="dt-published" datetime="2022-04-22T11:16:11.193Z" itemprop="datePublished">2022-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h1><p>线性表的链式存储结构称为线性链表，为了适应线性表的链式存储结构，计算机存储空间被划分为一个一个小块，每一小块占若干字节，通常称这些小块为存储结点。每一个存储结点分为两部分：一部分用于存储数据元素的值，称为数据域；另一部分用于存放下一个数据元素的存储序号，即指向后件的结点，称为指针域。在链式存储结构中，存储数据结构的存储空间可以不连续，各数据结点的存储顺序与数据元素之间的逻辑关系可以不一致。因此选项A、B均不正确。为了要在线性链表中插入一个新元素，首先要给该元素分配一个新结点，以便用于存储该元素的值，然后将存放新元素值的结点链接到线性表中指定的位置。在线性链表的插入过程中不发生数据无素移动的现象，只需改变有关结点的指针即可，从而提高了插入的效率。为了在线性链表中删除包含指定元素的结点，首先要在线性链表中找到这个结点，然后将要删除结点放回到可利用栈。在线性链表中删除一个元素后，不需要移动表的数据元素，只需改变被删元素所在结点的前一个结点的指针域即可。因此，进行插入与删除时，不需要移动表中的元素。</p>
+<p> 栈和队列都是操作受限的线性表，队列是先进先出，栈是后进先出。队列末尾插入元素的入队运算只涉及队尾指针的变化，队头删除元素的退队运算只涉及队头指针的变化。栈中只允许在栈顶进行插入和删除元素，只涉及栈顶指针的变化。</p>
+<p> 线性表由一组元素数据元素构成，各元素的数据类型必须相同，矩阵是一个比较复杂的线性表。线性表除了插入和删除运算之外还有查找、排序分解、合并等。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/22/%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%AC%94%E8%AE%B0/" data-id="cl2ac8k06000kscg03p31hlpx" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/04/22/%E7%BA%BF%E6%80%A7%E8%A1%A8%E5%8F%8A%E5%85%B6%E9%A1%BA%E5%BA%8F%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/04/22/%E7%AE%97%E6%B3%95%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/04/22/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/22/%E5%BE%AA%E7%8E%AF%E9%98%9F%E5%88%97%E9%98%9F%E5%88%97%E4%B8%AD%E7%9A%84%E5%85%83%E7%B4%A0%E4%B8%AA%E6%95%B0%E7%9A%84%E8%AE%A1%E7%AE%97/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/22/%E7%BA%BF%E6%80%A7%E8%A1%A8%E5%8F%8A%E5%85%B6%E9%A1%BA%E5%BA%8F%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/22/%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%AC%94%E8%AE%B0/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/22/%E7%AE%97%E6%B3%95%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

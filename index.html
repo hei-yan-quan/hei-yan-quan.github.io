@@ -71,46 +71,425 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-栈和队列" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2022/04/22/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-04-22T09:18:24.093Z" itemprop="datePublished">2022-04-22</time>
+    <a href="/2022/04/22/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/" class="article-date">
+  <time class="dt-published" datetime="2022-04-22T11:16:11.628Z" itemprop="datePublished">2022-04-22</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/04/22/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <h1 id="栈和队列"><a href="#栈和队列" class="headerlink" title="栈和队列"></a>栈和队列</h1><h2 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h2><h3 id="栈的介绍"><a href="#栈的介绍" class="headerlink" title="栈的介绍"></a>栈的介绍</h3><p> 栈是一种特殊的线性表，这种线性表只能在固定的一端进行插入和删除操作，允许插入和删除的一端称为栈顶，另一端称为栈底。一个新元素只能从栈顶一端进入，删除时，只能删除栈顶的元素，即刚刚被插入的元素。这表明栈的运算规则是”先进后出”（或称”后进先出”）。在栈顶进行插入运算，称为进栈（或入栈），在栈顶进行删除运算，称为退栈（或出栈）。</p>
+<h2 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h2><h3 id="循环队列"><a href="#循环队列" class="headerlink" title="循环队列"></a>循环队列</h3><p>所谓循环队列，就是将队列存储空间的最后一个位置绕到第1个位置，形成逻辑上的环状空间，供队列循环使用。所以循环队列还是属于线性结构。</p>
+<h4 id="头指针、队尾指针"><a href="#头指针、队尾指针" class="headerlink" title="头指针、队尾指针"></a>头指针、队尾指针</h4><p>循环队列的头指针front指向队列的第一个元素的前一位置，队尾指针rear指向队列的最后一个元素，循环队列的动态变化需要头尾指针共同反映。</p>
+<h4 id="循环队列的长度"><a href="#循环队列的长度" class="headerlink" title="循环队列的长度"></a>循环队列的长度</h4><p>循环队列的长度是：(sq.rear-sq.front+maxsize)%maxsize，所以循环队列的长度是由队头和队尾指针共同决定的，所以选项D正确。</p>
+<h3 id="在计算机中与栈相关实例"><a href="#在计算机中与栈相关实例" class="headerlink" title="在计算机中与栈相关实例"></a>在计算机中与栈相关实例</h3><p>在计算机系统中，如果一次只能执行一个用户程序，则在多个用户程序需要执行时，这些用户程序必须先按照到来的顺序进行排队等待。这通常是由计算机操作系统来进行管理的。<br>    在操作系统中，用一个线性表来组织管理用户程序的排队执行，原则是：初始线性表为空；当有用户程序到来时，将该用户程序加入到线性表的末尾进行等待；当计算机系统执行完当前的用户程序后，就从线性表的头部取出一个用户程序执行。是按照先进先出的原则进行操作的。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/22/hello-world/" data-id="cl2a824ah000074g0gboh39jp" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/04/22/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/" data-id="cl2ac8k02000fscg01617eyek" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-循环队列队列中的元素个数的计算" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/22/%E5%BE%AA%E7%8E%AF%E9%98%9F%E5%88%97%E9%98%9F%E5%88%97%E4%B8%AD%E7%9A%84%E5%85%83%E7%B4%A0%E4%B8%AA%E6%95%B0%E7%9A%84%E8%AE%A1%E7%AE%97/" class="article-date">
+  <time class="dt-published" datetime="2022-04-22T11:16:11.496Z" itemprop="datePublished">2022-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="循环队列队列中的元素个数的计算"><a href="#循环队列队列中的元素个数的计算" class="headerlink" title="循环队列队列中的元素个数的计算"></a>循环队列队列中的元素个数的计算</h1><p> 循环队列，就是将队列存储空间的最后一个位置绕到第一个位置，形成逻辑上的环状空间，供队列循环使用。循环队列的初始状态为空，即rear&#x3D;front&#x3D;m,队列中元素个数为<strong>rear-front</strong>得出</p>
+<h2 id="站的运算"><a href="#站的运算" class="headerlink" title="站的运算"></a>站的运算</h2><p>栈是限定在一端进行插入与删除的线性表。在栈的顺序存储空间S(1:m)中，S(bottom)通常为栈底元素（在栈非空的情况下），S(top)为栈顶元素。,Top&#x3D;0表示栈空；top&#x3D;m表示栈满。入栈运算时指在栈顶位置插入一个新元素（即top加1）退栈运算是指取出栈顶元素赋给一个指定的变量（即top减1），因此栈内元组个数为m-top+1。</p>
+<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220303160349832.png" alt="image-20220303160349832"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/22/%E5%BE%AA%E7%8E%AF%E9%98%9F%E5%88%97%E9%98%9F%E5%88%97%E4%B8%AD%E7%9A%84%E5%85%83%E7%B4%A0%E4%B8%AA%E6%95%B0%E7%9A%84%E8%AE%A1%E7%AE%97/" data-id="cl2ac8jzt0008scg0apih4pc5" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-线性表及其顺序存储结构" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/22/%E7%BA%BF%E6%80%A7%E8%A1%A8%E5%8F%8A%E5%85%B6%E9%A1%BA%E5%BA%8F%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/" class="article-date">
+  <time class="dt-published" datetime="2022-04-22T11:16:11.352Z" itemprop="datePublished">2022-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="线性表及其顺序存储结构"><a href="#线性表及其顺序存储结构" class="headerlink" title="线性表及其顺序存储结构"></a>线性表及其顺序存储结构</h1><p>在进行顺序查找过程中，如果线性表中的第1个元素就是被查找元素，则只需做一次比较就查找成功，查找效率最高；但如果被查找的元素是线性表中的最后一个元素，则为了查找这个元素需要与线性表中所有的元素进行比较，这是顺序查找的最坏情况。所以对长度为n的线性表进行顺序查找，在最坏情况下需要比较n次。所以平均情况下需要比较的次数是(1+2+3+……+n)&#x2F;n&#x3D;(n+1)&#x2F;2。</p>
+<h2 id="线性表的长度为n。在最坏情况下，比较次数为n-1的算法"><a href="#线性表的长度为n。在最坏情况下，比较次数为n-1的算法" class="headerlink" title="线性表的长度为n。在最坏情况下，比较次数为n-1的算法"></a>线性表的长度为n。在最坏情况下，比较次数为n-1的算法</h2><p>线性表中，最坏情况下，寻找最大项的比较次数为n-1,；寻找最小项的比较次数为n-1；顺序查找的比较次数为n；有序表的插入的比较次数为n。</p>
+<h2 id="二分法查找"><a href="#二分法查找" class="headerlink" title="二分法查找"></a>二分法查找</h2><p>二分法检索要求线性表结点按关键值排序且以顺序方式存储。在查找时，首先与表的中间位置上结点的关键值比较，若相等则检索成功；否则根据比较结果确定下一步在表的前半部分或后半部分继续进行。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/22/%E7%BA%BF%E6%80%A7%E8%A1%A8%E5%8F%8A%E5%85%B6%E9%A1%BA%E5%BA%8F%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/" data-id="cl2ac8k05000jscg0e84f1h55" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-线性表笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/22/%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time class="dt-published" datetime="2022-04-22T11:16:11.193Z" itemprop="datePublished">2022-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h1><p>线性表的链式存储结构称为线性链表，为了适应线性表的链式存储结构，计算机存储空间被划分为一个一个小块，每一小块占若干字节，通常称这些小块为存储结点。每一个存储结点分为两部分：一部分用于存储数据元素的值，称为数据域；另一部分用于存放下一个数据元素的存储序号，即指向后件的结点，称为指针域。在链式存储结构中，存储数据结构的存储空间可以不连续，各数据结点的存储顺序与数据元素之间的逻辑关系可以不一致。因此选项A、B均不正确。为了要在线性链表中插入一个新元素，首先要给该元素分配一个新结点，以便用于存储该元素的值，然后将存放新元素值的结点链接到线性表中指定的位置。在线性链表的插入过程中不发生数据无素移动的现象，只需改变有关结点的指针即可，从而提高了插入的效率。为了在线性链表中删除包含指定元素的结点，首先要在线性链表中找到这个结点，然后将要删除结点放回到可利用栈。在线性链表中删除一个元素后，不需要移动表的数据元素，只需改变被删元素所在结点的前一个结点的指针域即可。因此，进行插入与删除时，不需要移动表中的元素。</p>
+<p> 栈和队列都是操作受限的线性表，队列是先进先出，栈是后进先出。队列末尾插入元素的入队运算只涉及队尾指针的变化，队头删除元素的退队运算只涉及队头指针的变化。栈中只允许在栈顶进行插入和删除元素，只涉及栈顶指针的变化。</p>
+<p> 线性表由一组元素数据元素构成，各元素的数据类型必须相同，矩阵是一个比较复杂的线性表。线性表除了插入和删除运算之外还有查找、排序分解、合并等。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/22/%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%AC%94%E8%AE%B0/" data-id="cl2ac8k06000kscg03p31hlpx" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-算法时间复杂度" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/22/%E7%AE%97%E6%B3%95%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/" class="article-date">
+  <time class="dt-published" datetime="2022-04-22T11:16:11.065Z" itemprop="datePublished">2022-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="算法时间复杂度"><a href="#算法时间复杂度" class="headerlink" title="算法时间复杂度"></a>算法时间复杂度</h1>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/22/%E7%AE%97%E6%B3%95%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/" data-id="cl2ac8k04000iscg07vyv3ipu" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-数据库管理语言" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E8%AF%AD%E8%A8%80/" class="article-date">
+  <time class="dt-published" datetime="2022-04-22T11:16:10.935Z" itemprop="datePublished">2022-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="数据库管理语言"><a href="#数据库管理语言" class="headerlink" title="数据库管理语言"></a>数据库管理语言</h1><blockquote>
+<p>数据定义语言（DDL）：该语言负责数据的模式定义与数据的物理存取构建。</p>
+<p> 数据操纵语言（DML）：该语言负责数据的操纵，包括查询及增、删、改等操作。<br> 数据控制语言（DCL）：该语言负责数据完整性、安全性的定义与检查以及并发控制、故障恢复等功能。</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E8%AF%AD%E8%A8%80/" data-id="cl2ac8jzy000bscg03oz6fz2z" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-数据库" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/22/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="article-date">
+  <time class="dt-published" datetime="2022-04-22T11:16:10.818Z" itemprop="datePublished">2022-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><strong>1、数据库设计包括两个方面的设计</strong></p>
+<ol>
+<li>​	数据库设计可分为概念设计与逻辑设计。</li>
+<li>​     数据库概念设计的目的是分析数据间内在语义关联，在此基础上建立一个数据的抽象模型。</li>
+<li>​     数据库逻辑设计的主要工作是将ER图转换为指定的RDBMS中的关系模型。</li>
+</ol>
+<p><strong>2、关系数据库管理系统能实现的专门关系运算</strong>，</p>
+<p>​	选择运算、投影运算、连接运算。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/22/%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl2ac8jzx000ascg0ehwffbv7" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-数据库 (2)" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/22/%E6%95%B0%E6%8D%AE%E5%BA%93%20(2)/" class="article-date">
+  <time class="dt-published" datetime="2022-04-22T11:16:10.691Z" itemprop="datePublished">2022-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><strong>1、数据库设计包括两个方面的设计</strong></p>
+<ol>
+<li>​	数据库设计可分为概念设计与逻辑设计。</li>
+<li>​     数据库概念设计的目的是分析数据间内在语义关联，在此基础上建立一个数据的抽象模型。</li>
+<li>​     数据库逻辑设计的主要工作是将ER图转换为指定的RDBMS中的关系模型。</li>
+</ol>
+<p><strong>2、关系数据库管理系统能实现的专门关系运算</strong>，</p>
+<p>​	选择运算、投影运算、连接运算。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/22/%E6%95%B0%E6%8D%AE%E5%BA%93%20(2)/" data-id="cl2ac8jzv0009scg03m8b36c7" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-数据结构与算法笔记（一）" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/22/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/" class="article-date">
+  <time class="dt-published" datetime="2022-04-22T11:16:10.544Z" itemprop="datePublished">2022-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="数据结构与算法笔记（一）"><a href="#数据结构与算法笔记（一）" class="headerlink" title="数据结构与算法笔记（一）"></a>数据结构与算法笔记（一）</h1><h2 id="算法的基本概念"><a href="#算法的基本概念" class="headerlink" title="算法的基本概念"></a>算法的基本概念</h2><h3 id="什么是算法"><a href="#什么是算法" class="headerlink" title="什么是算法"></a>什么是算法</h3><p>算法是指一组有穷的指令集，是解题方案的准确而完整的描述。算法不等于程序，也不等于计算方法。</p>
+<h3 id="算法的基本特征"><a href="#算法的基本特征" class="headerlink" title="算法的基本特征"></a>算法的基本特征</h3><ol>
+<li>确定性，算法中每一步骤都必须有明确定义，不允许有多义性；</li>
+<li>有穷性，算法必须能在有限的时间内做完，即能在执行有限个步骤后终止；</li>
+<li>可行性，算法原则上能够精确地执行；</li>
+<li>拥有足够的情报。</li>
+</ol>
+<h3 id="算法的组成要素"><a href="#算法的组成要素" class="headerlink" title="算法的组成要素"></a>算法的组成要素</h3><p>一个算法由数据对象的运算和操作以及其控制结构这两部分组成。</p>
+<h3 id="算法的基本运算和操作"><a href="#算法的基本运算和操作" class="headerlink" title="算法的基本运算和操作"></a>算法的基本运算和操作</h3><ul>
+<li>算术运算</li>
+<li>逻辑运算</li>
+<li>关系运算</li>
+<li>数据传输。</li>
+</ul>
+<h3 id="算法的基本控制结构"><a href="#算法的基本控制结构" class="headerlink" title="算法的基本控制结构"></a>算法的基本控制结构</h3><p>顺序，选择，循环。</p>
+<h3 id="算法基本设计方法"><a href="#算法基本设计方法" class="headerlink" title="算法基本设计方法"></a>算法基本设计方法</h3><p>列举法、归纳法、递推、递归、减半递推技术。</p>
+<h2 id="算法的复杂度"><a href="#算法的复杂度" class="headerlink" title="算法的复杂度"></a>算法的复杂度</h2><ul>
+<li><p>算法效率的度量——算法的复杂度：时间复杂度和空间复杂度。</p>
+</li>
+<li><p>算法时间复杂度：指执行算法所需要的计算工作量。通常，一个算法所用的时间包括编译时间和运行时间。</p>
+</li>
+<li><p>算法空间复杂度：指执行这个算法所需要的内存空间。包括算法程序所占的空间，输入的初始数据所占的空间，算法执行过程中所需的额外空间。</p>
+</li>
+<li><p>注意空间复杂度和时间复杂度并不相关。</p>
+</li>
+</ul>
+<h2 id="数据结构的基本概念"><a href="#数据结构的基本概念" class="headerlink" title="数据结构的基本概念"></a>数据结构的基本概念</h2><h3 id="什么是数据"><a href="#什么是数据" class="headerlink" title="什么是数据"></a>什么是数据</h3><p>数据是客观事物的符号表示，是能输入到计算机中并被计算程序识别和处理的符号的总称，如文档，声音，视频等。</p>
+<h3 id="数据元素"><a href="#数据元素" class="headerlink" title="数据元素"></a>数据元素</h3><p>数据元素是数据的基本单位。</p>
+<h3 id="数据对象"><a href="#数据对象" class="headerlink" title="数据对象"></a>数据对象</h3><p>数据对象是性质相同的数据元素的集合。</p>
+<h3 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h3><p>数据结构是指由某一数据对象中所有数据成员之间的关系组成的集合。</p>
+<h2 id="逻辑结构和存储结构"><a href="#逻辑结构和存储结构" class="headerlink" title="逻辑结构和存储结构"></a>逻辑结构和存储结构</h2><p>数据结构可分为数据的逻辑结构和存储结构。</p>
+<h3 id="数据的逻辑结构"><a href="#数据的逻辑结构" class="headerlink" title="数据的逻辑结构"></a>数据的逻辑结构</h3><p>数据的逻辑结构是对数据元素之间的逻辑关系的描述，与数据的存储无关，是面向问题的，是独立于计算机的。它包括数据对象和数据对象之间的关系。</p>
+<h3 id="数据的存储结构"><a href="#数据的存储结构" class="headerlink" title="数据的存储结构"></a>数据的存储结构</h3><p>数据的存储结构也称为数据的物理结构，是数据在计算机中的存放的方式，是面向计算机的，它包括数据元素的存储方式和关系的存储方式。</p>
+<h3 id="存储结构和逻辑结构的关系"><a href="#存储结构和逻辑结构的关系" class="headerlink" title="存储结构和逻辑结构的关系"></a>存储结构和逻辑结构的关系</h3><p>一种数据的逻辑结构可以表示成多种存储结构即数据的逻辑结构和存储结构不一定一一对应。</p>
+<h3 id="常见的存储结构"><a href="#常见的存储结构" class="headerlink" title="常见的存储结构"></a>常见的存储结构</h3><p>常见的存储结构有：顺序，链接，索引等。采用不同的存储结构其数据处理的效率是不同的。</p>
+<h2 id="线性结构和非线性结构"><a href="#线性结构和非线性结构" class="headerlink" title="线性结构和非线性结构"></a>线性结构和非线性结构</h2><p><strong>线性结构的条件</strong>（一个非空数据结构)：</p>
+<p>（1）有且只有一个根结点；</p>
+<p>（2）每一个结点最多有一个前件，也最多有一个后件。<br><strong>非线性结构</strong>：不满足线性结构条件的数据结构。<br><strong>常见的非线性结构</strong>：栈、队列、双向链表是线性结构，树、二叉树。</p>
+<h3 id="线性表及其顺序存储结构"><a href="#线性表及其顺序存储结构" class="headerlink" title="线性表及其顺序存储结构"></a>线性表及其顺序存储结构</h3><h3 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h3><p>线性表是由一组数据元素构成，数据元素的位置只取决于自己的序号，元素之间的相对位置是线性的。</p>
+<p>在复杂线性表中，由若干项数据元素组成的数据元素称为记录；由多个记录构成的线性表称为文件。</p>
+<h4 id="非空线性表的结构特征"><a href="#非空线性表的结构特征" class="headerlink" title="非空线性表的结构特征"></a>非空线性表的结构特征</h4><ol>
+<li>有且只有一个根结点a1，它无前件；</li>
+<li>有且只有一个终端结点an，它无后件；</li>
+<li>除根结点与终端结点外，其他所有结点有且只有一个前件，也有且只有一个后件。</li>
+</ol>
+<p>结点个数n称为线性表的长度，当n&#x3D;0时，称为空表。</p>
+<h4 id="线性表的顺序存储结构两个基本特点"><a href="#线性表的顺序存储结构两个基本特点" class="headerlink" title="线性表的顺序存储结构两个基本特点"></a>线性表的顺序存储结构两个基本特点</h4><ol>
+<li>线性表中所有元素所占的存储空间是连续的；</li>
+<li>线性表中各数据元素在存储空间中是按逻辑顺序依次存放的。</li>
+</ol>
+<p>元素ai的存储地址为：ADR(ai)&#x3D;ADR(a1)+(i-1)*k，ADR(a1)为第一个元素的地址，k代表每个元素占的字节数。</p>
+<h4 id="顺序表的运算"><a href="#顺序表的运算" class="headerlink" title="顺序表的运算"></a>顺序表的运算</h4><p>查找、插入、删除。</p>
+<h2 id="线性链表"><a href="#线性链表" class="headerlink" title="线性链表"></a>线性链表</h2><p>线性链表是线性表的链式存储结构，数据结构中的每一个结点对应于一个存储单元，这种存储单元称为存储结点，简称结点。</p>
+<p>结点由两部分组成：</p>
+<ul>
+<li>用于存储数据元素值，称为数据域。</li>
+<li>用于存放指针，称为指针域，用于指向前一个或后一个结点。</li>
+</ul>
+<p>在链式存储结构中，存储数据结构的存储空间可以不连续，各数据结点的存储顺序与数据元素之间的逻辑关系可以不一致，而数据元素之间的逻辑关系是由指针域来确定的。<br>链式存储方式既可用于表示线性结构，也可用于表示非线性结构。<br>线性单链表中，HEAD称为头指针，HEAD&#x3D;NULL（或0）称为空表。</p>
+<p><img src="https://img-blog.csdnimg.cn/712860f98d3e40e5b0583166ef4f1d8c.png" alt="在这里插入图片描述"></p>
+<p>双向链表有两个指针：左指针（Llink）指向前件结点，右指针（Rlink）指向后件结点。</p>
+<p><img src="https://img-blog.csdnimg.cn/ed6a5b46009c40b798fe64e22ce06455.png" alt="在这里插入图片描述"></p>
+<p>循环链表：循环链表与单链表的不同的是它的最后一个结点的指针域存放的事指向第一个结点的指针而单链表存放的是空指针。</p>
+<p><img src="https://img-blog.csdnimg.cn/faf3fdbcd3934debbdf6723b5a978c07.png" alt="在这里插入图片描述"></p>
+<p>线性链表的基本运算：查找、插入、删除。</p>
+<h2 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h2><h3 id="栈的基本概念"><a href="#栈的基本概念" class="headerlink" title="栈的基本概念"></a>栈的基本概念</h3><p>栈是一种特殊的线性表，只允许在表的一端进行插入和删除的线性表；插入，删除的一端为栈顶，另一端为栈底；当表中没有元素时为空栈。<br>栈是一种后进先出（或先进后出Last In First Out）的线性表。栈具有记忆功能。栈的实例：火车调度，子弹夹。</p>
+<h3 id="栈的存储结构"><a href="#栈的存储结构" class="headerlink" title="栈的存储结构"></a>栈的存储结构</h3><p>顺序存储结构：用一组地址连续的存储单元即一维数组来存储；<br>链式存储：用线性链表来存储；</p>
+<h3 id="栈的基本运算"><a href="#栈的基本运算" class="headerlink" title="栈的基本运算"></a>栈的基本运算</h3><ul>
+<li>入栈运算，在栈顶位置插入元素；</li>
+<li>退栈运算，删除元素(取出栈顶元素并赋给一个指定的变量)；</li>
+<li>读栈顶元素，将栈顶元素赋给一个指定的变量，此时指针无变化。</li>
+</ul>
+<h2 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h2><h3 id="队列的基本概念"><a href="#队列的基本概念" class="headerlink" title="队列的基本概念"></a>队列的基本概念</h3><p>队列是一种特殊的线性表，只允许在表的一端插入，在另一端删除，允许插入的一端是队尾（rear），允许删除的一端为队头（front）；当表中没有元素是空队列；队列是一种先进先出的线性表。(FIFO)</p>
+<h3 id="队列的存储结构"><a href="#队列的存储结构" class="headerlink" title="队列的存储结构"></a>队列的存储结构</h3><ul>
+<li>顺序存储：一维数组。</li>
+<li>链式存储：线性链表。</li>
+</ul>
+<h3 id="队列的运算"><a href="#队列的运算" class="headerlink" title="队列的运算:"></a>队列的运算:</h3><ul>
+<li>入队运算：从队尾插入一个元素；</li>
+<li>退队运算：从队头删除一个元素。</li>
+</ul>
+<p>队列的顺序存储结构一般采用循环队列的形式。循环队列s&#x3D;0表示队列为空；s&#x3D;1且front&#x3D;rear表示队满。</p>
+<h3 id="计算循环队列的元素个数"><a href="#计算循环队列的元素个数" class="headerlink" title="计算循环队列的元素个数"></a>计算循环队列的元素个数</h3><p>计算循环队列的元素个数：“尾指针减头指针”，若为负数，再加其容量即可。</p>
+<h2 id="树的基本概念"><a href="#树的基本概念" class="headerlink" title="树的基本概念"></a>树的基本概念</h2><p>树是一种非线性结构，是n个结点的有限集。当n&#x3D;0 时为空树，n&gt;0时为非空树。结点的度：结点所拥有的子树的个数。<br>叶子结点：度为0的结点。<br>分支结点：除叶子结点以外的结点。<br>结点的层次：根结点在第一层，同一层上左右结点的子结点在下一层。<br>树的深度：所处层次最大的那个结点的层次。<br>树的度：树中所有结点的度的最大值。</p>
+<h2 id="二叉树及其基本性质"><a href="#二叉树及其基本性质" class="headerlink" title="二叉树及其基本性质"></a>二叉树及其基本性质</h2><h3 id="二叉树的概念"><a href="#二叉树的概念" class="headerlink" title="二叉树的概念"></a>二叉树的概念</h3><p>二叉树是一种特殊的树形结构，每个结点最多只有两棵子树，且有左右之分不能互换，因此，二叉树有五种不同的形态。</p>
+<h3 id="二叉树的性质"><a href="#二叉树的性质" class="headerlink" title="二叉树的性质"></a>二叉树的性质</h3><p>性质1 在二叉树的第k层上，最多有2∧(k-1) (其中k≥1）个结点。<br>性质2 深度为m的二叉树最多有2∧m-1个结点。<br>性质3 在任意一棵二叉树中，度为0的结点（叶子结点）总是比度为2的结点多一个。<br>性质4 具有n个结点的二叉树，其深度不小于[log₂n]+1,其中[log₂n]表示为log₂n的整数部分。</p>
+<h2 id="满二叉树与完全二叉树"><a href="#满二叉树与完全二叉树" class="headerlink" title="满二叉树与完全二叉树"></a>满二叉树与完全二叉树</h2><h3 id="满二叉树"><a href="#满二叉树" class="headerlink" title="满二叉树"></a>满二叉树</h3><p>满二叉树：除最后一层外，每一层上的所有结点都有两个子结点。在满二叉树中，每一层上的结点数都达到最大值，即在满二叉树的第k层上有2^(k-1)个结点，且深度为m的满二叉树有2 ^m－1个结点。</p>
+<h3 id="完全二叉树"><a href="#完全二叉树" class="headerlink" title="完全二叉树"></a>完全二叉树</h3><p>完全二叉树是指这样的二叉树：除最后一层外，每一层上的结点数均达到最大值；在最后一层上只缺少右边的若干结点。</p>
+<p>log2n]表示为log2n的整数部分。</p>
+<h2 id="满二叉树与完全二叉树-1"><a href="#满二叉树与完全二叉树-1" class="headerlink" title="满二叉树与完全二叉树"></a>满二叉树与完全二叉树</h2><h3 id="满二叉树-1"><a href="#满二叉树-1" class="headerlink" title="满二叉树"></a>满二叉树</h3><p>满二叉树：除最后一层外，每一层上的所有结点都有两个子结点。在满二叉树中，每一层上的结点数都达到最大值，即在满二叉树的第k层上有2k-1个结点，且深度为m的满二叉树有2 ^m－1个结点。</p>
+<h3 id="完全二叉树-1"><a href="#完全二叉树-1" class="headerlink" title="完全二叉树"></a>完全二叉树</h3><p>完全二叉树是指这样的二叉树：除最后一层外，每一层上的结点数均达到最大值；在最后一层上只缺少右边的若干结点。</p>
+<p>满二叉树是完全二叉树，而完全二叉树一般不是满二叉树。</p>
+<h2 id="完全二叉树的性质"><a href="#完全二叉树的性质" class="headerlink" title="完全二叉树的性质"></a>完全二叉树的性质</h2><p>性质1 具有n个结点的完全二叉树的深度为[log₂n]+1。<br>性质2 完全二叉树中度为1的结点数为0或1。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/22/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/" data-id="cl2ac8jzz000cscg096emexkd" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-数据结构与算法笔记（二）" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/22/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/" class="article-date">
+  <time class="dt-published" datetime="2022-04-22T11:16:10.386Z" itemprop="datePublished">2022-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="数据结构与算法笔记（二）"><a href="#数据结构与算法笔记（二）" class="headerlink" title="数据结构与算法笔记（二）"></a>数据结构与算法笔记（二）</h1><h2 id="二叉树的遍历"><a href="#二叉树的遍历" class="headerlink" title="二叉树的遍历"></a>二叉树的遍历</h2><h3 id="前序遍历"><a href="#前序遍历" class="headerlink" title="前序遍历"></a>前序遍历</h3><p>前序遍历：先访问根结点、然后遍历左子树，最后遍历右子树；并且，在遍历左、右子树时，仍然先访问根结点，然后遍历左子树，最后遍历右子树。</p>
+<h3 id="中序遍历"><a href="#中序遍历" class="headerlink" title="中序遍历"></a>中序遍历</h3><p>中序遍历：先遍历左子树、然后访问根结点，最后遍历右子树；并且，在遍历左、右子树时，仍然先遍历左子树，然后访问根结点，最后遍历右子树。</p>
+<h3 id="后序遍历"><a href="#后序遍历" class="headerlink" title="后序遍历"></a>后序遍历</h3><p>后序遍历：先遍历左子树、然后遍历右子树，最后访问根结点；并且，在遍历左、右子树时，仍然先遍历左子树，然后遍历右子树，最后访问根结点。</p>
+<h2 id="顺序查找"><a href="#顺序查找" class="headerlink" title="顺序查找"></a>顺序查找</h2><p>顺序查找是从表的一端开始，依次扫描表中的各个元素，并与所要查找的数进行比较。</p>
+<p>下列两种情况下只能采用顺序查找： </p>
+<ul>
+<li>如果线性表为无序表，则不管是顺序存储结构还是链式存储结构，只能用顺序查找。 </li>
+<li>即使是有序线性表，如果采用链式存储结构，也只能用顺序查找。</li>
+</ul>
+<h2 id="二分查找"><a href="#二分查找" class="headerlink" title="二分查找"></a>二分查找</h2><h3 id="二分查找的条件"><a href="#二分查找的条件" class="headerlink" title="二分查找的条件"></a>二分查找的条件</h3><ul>
+<li>用顺序存储结构</li>
+<li>线性表是有序表。</li>
+</ul>
+<p>对于长度为n的有序线性表，在最坏情况下，二分法查找只需比较log₂?n次，而顺序查找需要比较n次。</p>
+<h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><h3 id="交换排序"><a href="#交换排序" class="headerlink" title="交换排序"></a>交换排序</h3><ul>
+<li>冒泡排序法，在最坏的情况下，冒泡排序需要比较次数为n(n－1)&#x2F;2。 </li>
+<li>快速排序法 ，在最坏的情况下，快速排序需要比较次数为n(n－1)&#x2F;2。</li>
+</ul>
+<h3 id="插入类排序法："><a href="#插入类排序法：" class="headerlink" title="插入类排序法："></a>插入类排序法：</h3><ul>
+<li>简单插入排序法，最坏情况需要n(n-1)&#x2F;2次比较；</li>
+<li>希尔排序法，最坏情况需要O(n ^1.5 )次比较。（大写O是算法复杂度的表示方法）</li>
+</ul>
+<h3 id="选择类排序法："><a href="#选择类排序法：" class="headerlink" title="选择类排序法："></a>选择类排序法：</h3><p>（1）简单选择排序法，最坏情况需要n(n-1)&#x2F;2次比较；<br>（2）堆排序法，最坏)次比较。<br>相比以上几种(除希尔排序法外)，堆排序法的时间复杂度最小。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/22/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/" data-id="cl2ac8k00000dscg02phy0g0t" data-title="" class="article-share-link">Share</a>
       
       
       
@@ -123,6 +502,11 @@
 
   
 
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+  </nav>
 
 </section>
         
@@ -153,7 +537,23 @@
       <ul>
         
           <li>
-            <a href="/2022/04/22/hello-world/">Hello World</a>
+            <a href="/2022/04/22/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/22/%E5%BE%AA%E7%8E%AF%E9%98%9F%E5%88%97%E9%98%9F%E5%88%97%E4%B8%AD%E7%9A%84%E5%85%83%E7%B4%A0%E4%B8%AA%E6%95%B0%E7%9A%84%E8%AE%A1%E7%AE%97/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/22/%E7%BA%BF%E6%80%A7%E8%A1%A8%E5%8F%8A%E5%85%B6%E9%A1%BA%E5%BA%8F%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/22/%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%AC%94%E8%AE%B0/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/22/%E7%AE%97%E6%B3%95%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/">(no title)</a>
           </li>
         
       </ul>

@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-数据结构的基本概念" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/22/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" class="article-date">
+  <time class="dt-published" datetime="2022-04-22T11:16:10.234Z" itemprop="datePublished">2022-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="数据结构的基本概念"><a href="#数据结构的基本概念" class="headerlink" title="数据结构的基本概念"></a>数据结构的基本概念</h1><h2 id="数据结构的定义"><a href="#数据结构的定义" class="headerlink" title="数据结构的定义"></a>数据结构的定义</h2><p>数据结构是指反映数据元素之间关系的数据元素集合的表示。更通俗地说，数据结构是指带有结构的数据元素的集合。所谓结构实际上就是指数据元素之间的前后件关系。线性结构与非线性结构都可以是空的数据结构。</p>
+<p>一个空的数据结构究竟是属于线性结构还是属于非线性结构，还要根据具体情况来确定。如果对该数据结构的运算是按线性结构的规则来处理的，则属于线性结构；否则属于非线性结构。</p>
+<h3 id="数据结构的分类"><a href="#数据结构的分类" class="headerlink" title="数据结构的分类"></a>数据结构的分类</h3><p>根据数据结构中各数据元素之间前后件关系的复杂程度，一般将数据结构分为两大类型：线性结构与非线性结构。</p>
+<h2 id="线性结构（线性表）"><a href="#线性结构（线性表）" class="headerlink" title="线性结构（线性表）"></a>线性结构（线性表）</h2><p>  非空的数据结构满足下列两个条件：</p>
+<p>（1）有且只有一个根结点；</p>
+<p>（2）每一个结点最多有一个前件，也最多有一个后件。</p>
+<h3 id="线性链表"><a href="#线性链表" class="headerlink" title="线性链表"></a>线性链表</h3><p> 线性表的链式存储结构称为线性链表。在某些应用中，对线性链表中的每个结点设置两个指针，一个称为左指针，用以指向其前件结点；另一个称为右指针，用以指向其后件结点。</p>
+<h2 id="非线性结构"><a href="#非线性结构" class="headerlink" title="非线性结构"></a>非线性结构</h2><p><strong>非线性结构逻辑特征</strong></p>
+<p>是一个结点元素可能对应多个直接前驱和多个后驱。</p>
+<p>常见的非线性结构有：树（二叉树等），图（网等）。<br> 由于二叉树的存储结构中每一个存储结点有两个指针域，因此，二叉树的链式存储结构也称为二叉链表，二叉链表属于非线性结构。</p>
+<h2 id="栈和队列"><a href="#栈和队列" class="headerlink" title="栈和队列"></a>栈和队列</h2><p> <strong>栈</strong>是一种先进后出的线性表，栈实际上也是线性表，只不过是一种特殊的线性表。</p>
+<p><strong>队列</strong>是指允许在一端进行插入、而在另一端进行删除的线性表，队列是一种”先进先出”或”后进后出”的线性表</p>
+<h2 id="数据的逻辑结构"><a href="#数据的逻辑结构" class="headerlink" title="数据的逻辑结构"></a>数据的逻辑结构</h2><h3 id="数据的逻辑结构的两个要素："><a href="#数据的逻辑结构的两个要素：" class="headerlink" title="数据的逻辑结构的两个要素："></a>数据的逻辑结构的两个要素：</h3><ol>
+<li>是数据元素的集合，通常记为D；</li>
+<li>是D上的关系，它反映了D中各元素之前的前后件关系，通常记为R。即一个数据结构可以表示成B&#x3D;(D,R)，其中B表示数据结构。</li>
+</ol>
+<p>为了反映D中各元素之间的前后件关系，一般用二元组来表示。例如，假设a与b是D中的两个数据，则二元组(a,b)表示a是b的前件，b是a的后件。</p>
+<h2 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h2><p>二叉树是一种很有用的非线性结构。</p>
+<h3 id="二叉树的存储结构"><a href="#二叉树的存储结构" class="headerlink" title="二叉树的存储结构"></a>二叉树的存储结构</h3><p>二叉树的存储结构一共有两种：顺序存储结构和链式存储结构，且顺序存储结构仅适用于完全二叉树。非完全二叉树只能用链式存储结构。</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>双链表和二叉链表的结点都有两个指针域，前者是线性结构，后者是非线性结构</p>
+<p> 线性表、向量、栈、队列都属于线性结构的顺序存储。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/22/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" data-id="cl2ac8k01000escg0edh72h7t" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-树与二叉树" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/22/%E6%A0%91%E4%B8%8E%E4%BA%8C%E5%8F%89%E6%A0%91/" class="article-date">
+  <time class="dt-published" datetime="2022-04-22T11:16:10.085Z" itemprop="datePublished">2022-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="树与二叉树"><a href="#树与二叉树" class="headerlink" title="树与二叉树"></a>树与二叉树</h1><h2 id="二叉树的性质3"><a href="#二叉树的性质3" class="headerlink" title="二叉树的性质3"></a>二叉树的性质3</h2><p>在任意一棵二叉树中，度为0的结点（即叶子结点）总是比度为2的结点多一个。</p>
+<p>栈是一种只能在一端进行插入或删除操作的线性表。在主程序调用子程序时要首先保存主程序当前的状态，然后去执行子程序，最终把子程序的执行结果返回到主程序调用子程序的位置，继续向下执行。</p>
+<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220304144223590.png" alt="image-20220304144223590"></p>
+<h2 id="二叉树遍历"><a href="#二叉树遍历" class="headerlink" title="二叉树遍历"></a>二叉树遍历</h2><h3 id="前序遍历"><a href="#前序遍历" class="headerlink" title="前序遍历"></a>前序遍历</h3><p>前序遍历是指在访问根结点、遍历左子树与遍历右子树这三者中，首先访问根结点，然后遍历左子树，最后遍历右子树；并且遍历左、右子树时，仍然先访问根结点，然后遍历左子树，最后遍历右子树。</p>
+<h3 id="中序遍历"><a href="#中序遍历" class="headerlink" title="中序遍历"></a>中序遍历</h3><p>二叉树的中序遍历指在访问根结点、遍历左子树与遍历右子树这三者中，首先遍历左子树，然后访问根结点，最后遍历右子树；并且遍历左、右子树时，仍然先遍历左子树，然后访问根结点，最后遍历右子树。</p>
+<h3 id="后序遍历"><a href="#后序遍历" class="headerlink" title="后序遍历"></a>后序遍历</h3><p>二叉树的后序遍历指在访问遍历左子树与遍历右子树，然后访问根结点、这三者中，首先遍历左子树，然后访问右子树，最后遍历根结点；并且遍历左、右子树时，仍然先遍历左子树，然后访问遍历右子树，最后访问根结点。</p>
+<p>根据”树中的结点数&#x3D;树中所有结点的度之和+1”，叶子结点的度为0</p>
+<p> 二叉树的前序遍历：访问根节点，前序遍历左子树，前序遍历右子树。二叉树的中序遍历为：中序遍历左子树，访问根结点，中序遍历右子树。由两种遍历顺序可知，该二叉树每个结点均缺失了左边子树，这样造成前序序和中序序列相同。<br>    或者，可以根据前序遍历和后序遍历的特点，前序遍历由根结点开头，后序遍历由根节点结尾，所以本题根节点为A。</p>
+<p> 所有结点值均大于左子树的所有结点，且小于右子树所有结点，若想该二叉树遍历序列有序（数值从小到大）则需要首先遍历左子树，然后访问根节点，最后遍历右子树。这样的遍历顺序符合中序序列。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/22/%E6%A0%91%E4%B8%8E%E4%BA%8C%E5%8F%89%E6%A0%91/" data-id="cl2ac8k03000gscg0gwvtgx8i" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-软件工程当中的的用到的几种图" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/22/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%BD%93%E4%B8%AD%E7%9A%84%E7%9A%84%E7%94%A8%E5%88%B0%E7%9A%84%E5%87%A0%E7%A7%8D%E5%9B%BE/" class="article-date">
+  <time class="dt-published" datetime="2022-04-22T11:16:09.959Z" itemprop="datePublished">2022-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><strong>软件工程当中的的用到的几种图</strong></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/22/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%BD%93%E4%B8%AD%E7%9A%84%E7%9A%84%E7%94%A8%E5%88%B0%E7%9A%84%E5%87%A0%E7%A7%8D%E5%9B%BE/" data-id="cl2ac8k09000nscg0b1k21m40" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-软件工程笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/22/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time class="dt-published" datetime="2022-04-22T11:16:09.810Z" itemprop="datePublished">2022-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="软件工程笔记"><a href="#软件工程笔记" class="headerlink" title="软件工程笔记"></a>软件工程笔记</h1><p>软件定义与软件特点</p>
+<p>软件指的是计算机系统中与硬件相互依存的另一部分，包括程序、数据和相关文档的完整集合。</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>程序</td>
+<td>软件开发人员根据用户需求开发的、用程序设计语言描述的、适合计算机执行的指令序列</td>
+</tr>
+<tr>
+<td>数据</td>
+<td>使程序能正常操纵信息的数据结构</td>
+</tr>
+<tr>
+<td>文档</td>
+<td>与程序的开发、维护和使用有关的图文资料</td>
+</tr>
+</tbody></table>
+<p>1、软件的特点：</p>
+<p>1）软件是一种逻辑实体，具有抽象性；</p>
+<p>2）软件的生产与硬件不同，它没有明显的制作过程；</p>
+<p>3）软件在运行、使用期间不存在磨损、老化问题；</p>
+<p>4）软件的开发、运行对计算机系统具有依赖性，受计算机系统的限制，这导致了软件移植的问题；</p>
+<p>5）软件复杂性高，成本昂贵；</p>
+<p>6）软件开发涉及诸多的社会因素。</p>
+<p>2、根据应用目标的不同，软件可分应用软件、系统软件和支撑软件（或工具软件）。 </p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>应用软件</td>
+<td>为解决特定领域的应用而开发的软件，如办公自动化软件</td>
+</tr>
+<tr>
+<td>系统软件</td>
+<td>计算机管理自身资源，提高计算机使用效率并为计算机用户提供各种服务的软件，如操作系统</td>
+</tr>
+<tr>
+<td>支撑软件（或工具软件）</td>
+<td>支撑软件是介于两者之间，协助用户开发软件的工具性软件。</td>
+</tr>
+</tbody></table>
+<p><strong>【考点2】软件的生命周期</strong></p>
+<p>软件生命周期是指软件产品从提出、实现、使用维护到停止使用退役的整个过程。可分为软件定义，软件开发及软件维护3个阶段。软件生命周期中，能够准确确定软件系统必须做什么和必须具备哪些功能的阶段是：需求分析。</p>
+<p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps9778.tmp.png" alt="img">	</p>
+<p>定义阶段           开发阶段            维护阶段</p>
+<p><strong>【考点3】软件危机和软件工程的概念</strong></p>
+<p>软件危机泛指在计算机软件的开发和维护过程中遇到的一系列严重的问题，集中表现在成本，质量。生产效率等几个方面。</p>
+<p>所谓软件工程是指采用工程的概念、原理、技术和方法指导软件的开发与维护。是建立并使用完善的工程化原则，以较经济的手段获得，能在实际机器上有效运行的可靠软件的一系列方法；软件工程的主要思想强调在软件开发过程中需要应用工程化原则。软件工程的核心思想是把软件当作一个工程产品来处理。</p>
+<p>软件工程包括3个要素：方法，工具和过程</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>方法</td>
+<td>方法是完成软件工程项目的技术手段</td>
+</tr>
+<tr>
+<td>工具</td>
+<td>工具支持软件的开发、管理、文档生成</td>
+</tr>
+<tr>
+<td>过程</td>
+<td>过程支持软件开发的各个环节的控制、管理</td>
+</tr>
+</tbody></table>
+<p><strong>【考点4】软件工程过程</strong></p>
+<p>软件工程过程是把软件转化为输出的一组彼此相关的资源活动，包含4种基本活动：</p>
+<p>（1）P(plan)——软件规格说明；  （2）D(do)——软件开发；</p>
+<p>（3）C(check)——软件确认；    （4）A(action)——软件演进。</p>
+<p><strong>【考点5】软件开发技术和软件工程管理</strong></p>
+<p>1、软件工程的理论和技术性研究的内容主要包括软件开发技术和软件工程管理。</p>
+<p>2、软件开发技术包括软件开发方法学、开发过程、开发工具和软件工程环境，其主体内容是软件开发方法学。</p>
+<p>3、软件开发方法包括分析方法，设计方法和程序设计方法。</p>
+<p>4、软件工程管理包括软件管理学，软件工程经济学，软件心理学等。</p>
+<p>5、软件管理学包括人员组织，进度安排，质量保证，配置管理，项目计划等。</p>
+<p>6、软件工程经济学是研究软件开发中成本的估算，成本效益的方法和技术。</p>
+<p><strong>【考点6】软件工程的原则</strong></p>
+<p>软件工程的原则：抽象，信息隐蔽，模块化，局部化，确定性，一致性，完备性，可验证性。</p>
+<p><strong>【考点7】需求分析概述</strong></p>
+<p>需求分析阶段的工作：需求获取，需求分析，编写需求规格说明书，需求评审。</p>
+<p>需求分析方法有：</p>
+<p>（1）结构化需求分析方法； </p>
+<p>①面向数据结构的Jackson方法（ISD）；</p>
+<p>②面向数据流的结构化分析方法（SA）；</p>
+<p>③面向数据结构的结构化数据系统开发方法（DSSD）；</p>
+<p>（2）面向对象的分析的方法（OOA）。</p>
+<p>从需求分析建立的模型的特性来分：静态分析和动态分析。</p>
+<p><strong>【考点8】结构化方法和结构化分析方法</strong></p>
+<p>1、结构化方法包括结构化分析方法，结构化设计方法，结构化编程方法。</p>
+<p>结构化方法中，软件功能分解属于总体设计阶段。</p>
+<p>2、结构化分析方法的概念</p>
+<p>结构化分析方法是面向数据流自顶而下逐步求精进行需求分析的方法。</p>
+<p>结构化分析方法在软件需求分析阶段的应用。</p>
+<p>3、结构化分析的常用工具</p>
+<p>（1）数据流图（DFD-Data Flow Diagram）：是结构化分析方法中用于系统逻辑模型的一种工具。它以图形的方式描绘在系统中流动和处理的过程。</p>
+<p>数据流图中四种基本的符号。</p>
+<p>1）箭头：表示数据流，数据流是数据在系统中传播的路径。</p>
+<p>2）圆或椭圆：表示加工，加工又称为数据处理，是对数据流进行某些操作或变换。</p>
+<p>3）双横：表示数据存储（数据源）。数据存储又称为文件，指暂时保存的数据，它可以是数据库文件或任何形式的数据组织。</p>
+<p>4）方框：数据的源点或终点。它是软件系统外部环境中的实体，统称外部实体</p>
+<p>（2）数据字典（DD）：它是结构分析方法的核心，是用来描述系统中所用到的全部数据和文件的文档,作用是对DFD中出现的被命名的图形元素进行确切解释。</p>
+<p>  数据字典由以下4类元素组成</p>
+<p>1）数据流  2）数据流分量 3）数据存储 4）处理 </p>
+<p>（3）判定树（决策树）：是一种描述加工的图形工具，适合描述时候处理中具有多个判断，而且每个决策与若干条件有关。</p>
+<p>（4）判定表：与判定树类似，也是一种描述加工的图形工具。如果一个加工逻辑有多个条件、多个操作，并且在不同的条件组合下执行不同的操作，那么可以使用判定表来描述。</p>
+<p><strong>【考点9】软件需求规格说明书</strong></p>
+<p>软件需求规格说明书（SRS，Software Requirement Specification）是需求分析阶段得出的最主要的文档。软件需求规格说明书的特点：有正确性、无歧义性、完整性、可验证性、一致性、可理解性、可修改性和可追踪性。其中最重要的是无歧义性。</p>
+<p><strong>【考点10】软件设计的基本概念</strong></p>
+<p>软件设计是确定系统的物理模型。</p>
+<p>软件设计是开发阶段最重要的步骤，是将需求准确地转化为完整的软件产品或系统的唯一途径。</p>
+<p>从技术观点上看，软件设计包括软件结构设计、数据设计、接口设计、过程设计。</p>
+<p>（1）结构设计定义软件系统各主要部件之间的关系； </p>
+<p>（2）数据设计将分析时创建的模型转化为数据结构的定义； </p>
+<p>（3）接口设计是描述软件内部、软件和协作系统之间以及软件与人之间如何通信； </p>
+<p>（4）过程设计则是把系统结构部件转换为软件的过程性描述。</p>
+<p>从工程管理角度来看，软件设计分两步完成：概要设计和详细设计。</p>
+<p>（1）概要设计将软件需求转化为软件体系结构、确定系统级接口、全局数据结构或数据库模式； </p>
+<p>（2）详细设计确立每个模块的实现算法和局部数据结构，用适当方法表示算法和数据结构的细节。</p>
+<p><strong>【考点11】软件设计的基本原理</strong></p>
+<p>1、软件设计中应该遵循的基本原理和与软件设计有关的概念：</p>
+<p>模块化：把程序划分成独立命名且可独立访问的模块，每个模块完成一个子功能。</p>
+<p>抽象化：抽出事物的本质特性而暂时不考虑它们的细节。</p>
+<p>信息隐藏和局部化：信息隐蔽是指在一个模块内包含的信息（过程或数据），对于不需要这些信息的其他模块来说是不能访问的，实现信息隐蔽依靠对象的封装。</p>
+<p>模块独立性：模块独立性是指每个模块只完成系统要求的独立的子功能，并且与其他模块的联系最少且接口简单。模块的独立程度是评价设计好坏的重要度量标准。</p>
+<p><strong>【考点12】耦合性和内聚性</strong></p>
+<p>衡量软件的模块独立性是用耦合性和内聚性两个定性的度量标准。</p>
+<p>耦合性：是对一个软件结构内不同模块之间互联程度的度量。耦合性的强弱取决于模块间接口的复杂程度。</p>
+<p>内聚性：是一个模块内部各个元素间彼此结合的紧密程度的度量。</p>
+<p>一个模块的内聚性越强则该模块的模块独立性越强。一个模块与其他模块的耦合性越强则该模块的模块独立性越弱。</p>
+<p>在结构程序设计中，模块划分的原则是模块内具有高内聚度，模块间具有低耦合度。</p>
+<p>耦合和内聚的种类。</p>
+<p>耦合度由低到高：非直接耦合，数据耦合，标记耦合，控制耦合，外部耦合，公共耦合，内容耦合。</p>
+<p>内聚性由强到弱：功能内聚，顺序内聚，通信内聚，过程内聚，时间内聚，逻辑内聚，偶然内聚。</p>
+<p><strong>【考点13】结构化设计方法</strong></p>
+<p>结构化分析方法是面向数据流自顶而下，逐步求精进行需求分析的方法，基本思想将软件设计成由相对独立，单一功能的模块组成的结构，与结构分析方法衔接使用，以数据流图为基础得到软件的模块结构，适用于变换型结构和事物型结构的目标系统。</p>
+<p>1、概要设计的任务：（1）划分出组成系统的物理元素  （2）设计软件的结构</p>
+<p>2、概要设计的工具：</p>
+<p>结构图（SC-Structure Chart）也称程序结构图，在结构图中，模块用一个矩形表示，箭头表示模块间的调用关系。可以用带注释的箭头表示模块调用过程中来回传递的信息。还可用带实心圆的箭头表示传递的是控制信息，空心圆箭心表示传递的是数据。</p>
+<p>结构图的基本形式：基本形式、顺序形式、重复形式、选择形式。</p>
+<p>结构图有四种模块类型：传入模块、传出模块、变换模块和协调模块。</p>
+<p>程序结构图中的专业术语：</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>深度</td>
+<td>表示控制的层数</td>
+</tr>
+<tr>
+<td>上级模块，从属模块</td>
+<td>上，下两层模块a和b，且有a调用b，则a是上级模块，b是从属模块</td>
+</tr>
+<tr>
+<td>宽度</td>
+<td>整体控制跨度（最大模块的层）的表示</td>
+</tr>
+<tr>
+<td>扇入</td>
+<td>调用该模块的模块个数</td>
+</tr>
+<tr>
+<td>扇出</td>
+<td>一个模块直接调用的其他模块数</td>
+</tr>
+<tr>
+<td>原子模块</td>
+<td>树中位于叶子节点的模块</td>
+</tr>
+</tbody></table>
+<p>3、面向数据流的设计方法</p>
+<p>任何软件系统都可以用数据流图表示，典型的数据流类型有两种：变换型和事务型。</p>
+<p>变换型系统结构图由输入、中心变换、输出三部分组成。</p>
+<p>4、设计的准则</p>
+<p>（1）提高模块独立性。</p>
+<p>（2）模块规模适中。</p>
+<p>（3）深度，宽度，扇出和扇入适当。如果深度过大，则说明有的控制模块可能简单了，如果宽度过大，则说明系统的控制过于集中，扇出过大说明模块过分复杂，需要控制和协调过多的下级模块，应适当加中间层次，扇出过小可以把模块进一步分解成若干小模块，或合并到上级模块中，扇入越大则共享该模块的上级数目越多。好的软件设计结构通常顶层高扇出，中间扇出较少，底层高扇入。</p>
+<p>（4）使模块的作用域在该模块的控制域内。</p>
+<p>（5）减少模块的接口和界面的复杂性。</p>
+<p>（6）设计成单入口，单出口的模块。</p>
+<p>（7）设计功能可预测的模块。</p>
+<p>详细设计常用的设计工具（工程设计工具）：图形工具，表格工具和语言工具。</p>
+<p>图形工具：</p>
+<p>程序流程图：箭头表示控制流，方框表示加工步骤，菱形表示逻辑条件。</p>
+<p>N-S图：有五种基本图形。</p>
+<p>PAD图：问题分析图，有五种基本图型。</p>
+<p>表格工具：判定表。</p>
+<p>语言工具：PDL——过程设计语言（结构化的英语和伪码）。</p>
+<p><strong>【考点14】软件测试的目标和准则</strong></p>
+<p>软件测试的目标：发现程序中的错误。</p>
+<p>软件测试的准则：</p>
+<p>（1）所有测试都是应追溯到需求。</p>
+<p>（2）严格执行测试计划，排除测试的随意性。</p>
+<p>（3）充分注意测试中的群集表现。程序中存在错误的概率与该程序中已发现的错误数成正比。</p>
+<p>（4）程序员应避免检查自己的程序。</p>
+<p>（5）穷举测试不可能。穷举测试是把程序所有可能的执行路径都进行检查，即使小规模的程序的执行路径数也相当大，不可能穷尽，说明测试只能证明程序有错，不能证明程序中无错。</p>
+<p>（6）妥善保存测试计划，测试用例出错统计和最终分析报告。</p>
+<p><strong>【考点15】软件测试方法</strong></p>
+<p>从是否需要执行被测软件的角度分为静态测试和动态测试;按功能分为白盒测试和黑盒测试</p>
+<p>1、静态测试和动态测试</p>
+<p>静态测试包括代码检查、静态结构分析、代码质量度量。不实际运行软件，主要通过人工进行。</p>
+<p>动态测试是通过运行软件来检验软件中的动态行为和运行结果的正确性。动态测试的关键是使用设计高效、合理的测试用例。测试用例就是为测试设计的数据，由测试输入数据（输入值集）和预期的输出结果（输出值集）两部份组成。测试用例的设计方法一般分为两类：黑盒测试方法和白盒测试方法。</p>
+<p>2、白盒测试和黑盒测试</p>
+<p>（1）白盒测试 </p>
+<p>白盒测试也称为结构测试或逻辑测试，是把程序看成装在一只透明的白盒子里，测试者完全了解程序的结构和处理过程。它根据程序的内部逻辑来设计测试用例，检查程序中的逻辑通路是否都按预定的要求正确地工作。</p>
+<p>白盒测试的基本原则：</p>
+<p>（1）保证所测模块中每一独立路径至少执行一次。</p>
+<p>（2）保证所测模块所有判断的每一分支至少执行一次。</p>
+<p>（3）保证所测模块每一循环都在边界条件和一般条件下至少各执行一次。</p>
+<p>（4）验证所有内部数据结构的有效性。</p>
+<p>（5）按照白盒测试的基本原则，“白盒”法是穷举路径测试。</p>
+<p>白盒测试的方法：逻辑覆盖，基本路经测试。</p>
+<p>（2）黑盒测试 </p>
+<p>黑盒测试也称功能测试或数据驱动测试，是把程序看成一只黑盒子，测试者完全不了解，或不考虑程序的结构和处理过程。它根据规格说明书的功能来设计测试用例，检查程序的功能是否符合规格说明的要求。</p>
+<p>黑盒测试的方法：等价划分法，边界值分析法，错误推测法。</p>
+<p><strong>【考点16】软件测试的实施</strong></p>
+<p>软件测试过程分4个步骤，即单元测试、集成测试、验收测试和系统测试。</p>
+<p>单元测试是对软件设计的最小单位——模块进行正确性检验的测试，单元测试的根据是源程序和详细设计说明书，单元测试的技术可以采用静态分析和动态测试。</p>
+<p>单元测试期间对模块进行的测试：模块接口，局部数据结构，重要的执行通路，出错处理通路，边界条件。</p>
+<p>驱动模块相当于被测模块的主程序，它接收测试数据，并传给所测模块，输出实际测试结果</p>
+<p>桩模块通常用于代替被测模块调用的其他模块，其作用仅做少量的数据操作，是一个模拟子程序。</p>
+<p>集成测试是测试和组装软件的系统化技术，主要目的是发现与接口有关的错误，集成测试的依据是概要设计说明书。</p>
+<p>集成测试的方法：非增量方式组装和增量方法组装。</p>
+<p>增量方式包括自顶而下的增量方式，自底而上的增量方式和混合增量方式。</p>
+<p>确认测试的任务是验证软件的功能和性能，确认测试的实施首先运用黑盒测试方法，对软件进行有效性测试，即验证被测软件是否满足需求规格说明确认的标准。 </p>
+<p>检查软件产品是否符合需求定义的过程是：确认测试。</p>
+<p>系统测试是通过测试确认的软件，作为整个基于计算机系统的一个元素，与计算机硬件、外设、支撑软件、数据和人员等其他系统元素组合在一起，在实际运行（使用）环境下对计算机系统进行一系列的集成测试和确认测试。</p>
+<p>系统测试的具体实施一般包括：功能测试、性能测试、操作测试、配置测试、外部接口测试、安全性测试等。 </p>
+<p><strong>【考点17】程序调试</strong></p>
+<p>在对程序进行了成功的测试之后将进入程序调试（通常称Debug，即排错）。</p>
+<p>程序的调试任务是诊断和改正程序中的错误。</p>
+<p>程序调试和软件测试的区别：</p>
+<p>（1）软件测试是尽可能多地发现软件中的错误，而程序调试先要发现软件的错误，然后借助于一定的调试工具去执行找出软件错误的具体位置。</p>
+<p>（2）软件测试贯穿整个软件生命期，调试主要在开发阶段。</p>
+<p>程序调试的基本步骤：</p>
+<p>（1）错误定位。从错误的外部表现形式入手，研究有关部分的程序，确定程序中出错位置，找出错误的内在原因；</p>
+<p>（2）修改设计和代码，以排除错误； </p>
+<p>（3）进行回归测试，防止引进新的错误。</p>
+<p>软件调试可分为静态调试和动态调试。静态调试主要是指通过人的思维来分析源程序代码和排错，是主要的设计手段，而动态调试是辅助静态调试的。</p>
+<p>主要的调试方法有：</p>
+<p>（1）强行排错法； （2）回溯法； （3）原因排除法，包括演绎法，归纳法和二分法。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/22/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E7%AC%94%E8%AE%B0/" data-id="cl2ac8k0a000oscg002ngazwg" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-软件工程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/22/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" class="article-date">
+  <time class="dt-published" datetime="2022-04-22T11:16:09.663Z" itemprop="datePublished">2022-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="软件工程笔记"><a href="#软件工程笔记" class="headerlink" title="软件工程笔记"></a>软件工程笔记</h1><h2 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h2><p> 计算机软件是计算机系统中与硬件相互依存的另一部分，是程序、数据及相关文档的完整集合。</p>
+<p> <strong>软件生命周期</strong>可分为软件定义、软件开发及软件运行维护三个阶段。<strong>软件开发阶段</strong>包括概要设计、详细设计、实现和测试四个活动阶段。</p>
+<h3 id="软件的分类"><a href="#软件的分类" class="headerlink" title="软件的分类"></a>软件的分类</h3><p>软件按功能可以分为：应用软件、系统软件、支撑软件（或工具软件）。</p>
+<h4 id="应用软件"><a href="#应用软件" class="headerlink" title="应用软件"></a>应用软件</h4><p>​			应用软件是为解决特定领域的应用而开发的软件。例如，事务处理软件，工程与科学计算软件，实时处理软件，嵌入式软件，人工	智能软件等应用性质不同的各种软件。</p>
+<h4 id="系统软件"><a href="#系统软件" class="headerlink" title="系统软件"></a>系统软件</h4><p>​			系统软件是计算机管理自身资源，提高计算机使用效率并为计算机用户提供各种服务的软件。如操作系统，编译程序，汇编程序，	网络软件，数据库管理系统等，所以选项B属于系统软件。</p>
+<h3 id="软件需求规格说明书"><a href="#软件需求规格说明书" class="headerlink" title="软件需求规格说明书"></a>软件需求规格说明书</h3><p>​		软件需求规格说明书是<strong>需求分析阶段</strong>产生的主要文档，可以为用户、分析人员和设计人员之间的交流提供方便，可以直接支持目标软件系统的确认，又可以作为控制开发软件进程的依据。</p>
+<p> 软件需求规格说明书的作用：<br>    1.便于用户和开发人员进行理解和交流。<br>    2.反映出用户问题的结构，可以作为软件开发工作的基础和依据。<br>    3.作为确认测试和验收的依据。</p>
+<h3 id="软件危机"><a href="#软件危机" class="headerlink" title="软件危机"></a>软件危机</h3><p>​	软件危机主要表现在：<br>​    ①软件需求的增长得不到满足。用户对系统不满意的情况经常发生。<br>​    ②软件开发成本和进度无法控制。开发成本超出预算，开发周期大大超过规定日期的情况经常发生。<br>​    ③软件质量难以保证。<br>​    ④软件不可维护或维护程度非常低。<br>​    ⑤软件的成本不断提高。<br>​    ⑥软件开发生产率的提高赶不上硬件的发展和应用需求的增长。<br>​    总之，可以将软件危机归结为成本、质量、生产率等问题。</p>
+<h3 id="软件生命周期"><a href="#软件生命周期" class="headerlink" title="软件生命周期"></a>软件生命周期</h3><p>​		通常，将软件产品从提出、实现、使用维护到停止使用退役的过程称为软件生命周期。也就是说，软件产品从考虑其概念开始，到该软件产品不能使用为止的整个时期都属于软件生命周期。</p>
+<h4 id="软件生命周期的主要活动阶段"><a href="#软件生命周期的主要活动阶段" class="headerlink" title="软件生命周期的主要活动阶段"></a>软件生命周期的主要活动阶段</h4><p>（1）<strong>可行性研究和计划制定</strong>。确定待开发软件系统的开发目标和总的要求，给出它的功能、性能、可靠性以及接口等方面的可能方案，制定完成开发任务的实施计划。<br>（2）<strong>需求分析</strong>。对待开发软件提出的需求进行分析并给出详细定义，即准确地确定软件系统的功能。编写软件规格说明书及初步的用户手册，提交评审。<br>（3）<strong>软件设计</strong>。系统设计人员和程序设计人员应该在反复理解软件需求的基础上，给出软件的结构、模块的划分、功能的分配以及处理流程。<br>（4）<strong>软件实现</strong>。把软件设计转换成计算机可以接受的程序代码。即完成源程序的编码，编写用户手册、操作手册等面向用户的文档，编写单元测试计划。<br>（5）<strong>软件测试</strong>。在设计测试用例的基础上，检验软件的各个组成部分。编写测试分析报告。<br>（6）<strong>运行和维护</strong>。将已交付的软件投入运行，并在运行使用中不断地维护，根据新提出的需求进行必要而且可能的扩充和删改。</p>
+<h2 id="结构化程序设计"><a href="#结构化程序设计" class="headerlink" title="结构化程序设计"></a>结构化程序设计</h2><p>软件设计中通常采用结构化设计方法，模块的独立程度是评价设计好坏的重要度量标准。</p>
+<p>耦合性与内聚性是模块独立性的两个定性标准。</p>
+<p>内聚性是一个模块内部各个元素间彼此结合的紧密程度的度量；</p>
+<p>耦合性是模块间互相连接的紧密程度的度量。</p>
+<p>一般较优秀的软件设计，应尽量做到高内聚，低耦合，即减弱模块之间的耦合性和提高模块内的内聚性，有利于提高模块的独立性。</p>
+<h2 id="软件测试"><a href="#软件测试" class="headerlink" title="软件测试"></a>软件测试</h2><h3 id="软件测试的定义"><a href="#软件测试的定义" class="headerlink" title="软件测试的定义"></a>软件测试的定义</h3><p>​		1983年IEEE将软件测试定义为：使用人工或自动手段来运行或测定某个系统的过程，其目的在于检验它是否满足规定的需求或是弄清预期结果与实际结果之间的差别。</p>
+<h3 id="软件测试的步骤"><a href="#软件测试的步骤" class="headerlink" title="软件测试的步骤"></a>软件测试的步骤</h3><p>  软件测试过程一般按4个步骤进行，即单元测试、集成测试、验收测试（确认测试）和系统测试。</p>
+<h3 id="软件测试的基本准则为："><a href="#软件测试的基本准则为：" class="headerlink" title="软件测试的基本准则为："></a>软件测试的基本准则为：</h3><p>​	①所有测试都应追溯到需求。</p>
+<p>​	②严格执行测试计划，排除测试的随意性。</p>
+<p>​	③充分注意测试中的群集现象。</p>
+<p>​	④程序员应避免检查自己的程序。</p>
+<p>​	⑤穷举测试不可能。</p>
+<p>​	⑥妥善保存测试计划、测试用例、出错统计和最终分析报告，为维护提供方便。</p>
+<h3 id="程序调试debug"><a href="#程序调试debug" class="headerlink" title="程序调试debug"></a>程序调试debug</h3><p>​    在对程序进行了成功的测试之后将进入程序调试（通常称Debug，即排错）。<br>​    <strong>程序调试的任务</strong>是诊断和改正程序中的错误。</p>
+<h4 id="程序调试的基本步骤："><a href="#程序调试的基本步骤：" class="headerlink" title="程序调试的基本步骤："></a>程序调试的基本步骤：</h4><p>​		①错误定位。</p>
+<p>​		②修改设计和代码，以排除错误。		</p>
+<p>​		③进行回归测试，防止引进新的错误。</p>
+<h4 id="软件调试的目的"><a href="#软件调试的目的" class="headerlink" title="软件调试的目的"></a>软件调试的目的</h4><p>软件调试的目的是诊断和改正程序中的错误，改正以后还需要再测试。</p>
+<p>​			软件测试是为了发现错误而执行程序的过程；</p>
+<p>一个好的测试用例是指很可能找到迄今为止尚未发现的错误的用例，一个成功的测试是发现了至今尚未发现的错误的测试。整体来说，软件测试的目的就是尽可能多地发现程序中的错误。</p>
+<h3 id="黑盒测试"><a href="#黑盒测试" class="headerlink" title="黑盒测试"></a>黑盒测试</h3><p>​		黑盒测试方法也称为功能测试或数据驱动测试。黑盒测试是对软件已经实现的功能是否满足需求进行测试和验证。黑盒测试完全不考虑程序内部的逻辑结构和内部特性，只依据程序的需求和功能规格说明，检查程序的功能是否符合它的功能说明。</p>
+<h4 id="黑盒测试方法"><a href="#黑盒测试方法" class="headerlink" title="黑盒测试方法"></a>黑盒测试方法</h4><p>黑盒测试方法主要有：等价类划分法、边界值分析法、错误推测法、因果图等，主要用于软件确认测试。</p>
+<h3 id="白盒测试"><a href="#白盒测试" class="headerlink" title="白盒测试"></a>白盒测试</h3><p> 白盒测试把测试对象看作一个打开的盒子，允许测试人员利用程序内部的逻辑结构及有关信息来设计或选择测试用例，对程序所有的逻辑路径进行测试。</p>
+<p>白盒测试从检查程序的逻辑着手，可以把白盒测试理解为”内行人”进行软件测试。</p>
+<h3 id="软件调试和软件测试的区别"><a href="#软件调试和软件测试的区别" class="headerlink" title="软件调试和软件测试的区别"></a>软件调试和软件测试的区别</h3><p>​		程序调试的任务是诊断和改正程序中的错误。</p>
+<p>​		软件测试是尽可能多地发现软件中的错误。</p>
+<p>​		软件测试贯穿整个软件生命期，调试主要在开发阶段。</p>
+<h2 id="程序流程图（PFD）"><a href="#程序流程图（PFD）" class="headerlink" title="程序流程图（PFD）"></a>程序流程图（PFD）</h2><p><strong>需求分析阶段</strong>常用的工具是数据流图（简称DFD）和数据字典（简称DD）。<strong>常见的详细设计的图形描述工具主要有程序流程图、N-S结构图、问题分析图（简称PAD图）。</strong></p>
+<p>程序流程图（PFD）是一种传统的、应用广泛的软件过程设计表示工具，通常也称为程序框图，其<strong>箭头代表的是控制流。</strong></p>
+<h2 id="数据流图"><a href="#数据流图" class="headerlink" title="数据流图"></a>数据流图</h2><p>数据流图是描述数据处理过程的工具，是需求理解的逻辑模型的图形表示，它直接支持系统的功能建模。数据流图从数据传递和加工的角度，来刻画数据流从输入到输出的移动变换过程。数据流图中的主要的图形元素与说明如下：<br>    <img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220301193511399.png" alt="image-20220301193511399"></p>
+<h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><h3 id="常见的需求分析方法："><a href="#常见的需求分析方法：" class="headerlink" title="常见的需求分析方法："></a>常见的需求分析方法：</h3><p>​	结构化分析方法和面向对象的分析方法。</p>
+<h4 id="结构化分析"><a href="#结构化分析" class="headerlink" title="结构化分析"></a>结构化分析</h4><p>结构化分析就是使用数据流图（DFD）、数据字典（DD）、结构化英语、判定表和判定树等工具，来建立一种新的、称为结构化规格说明的目标文档。</p>
+<h2 id="数据字典"><a href="#数据字典" class="headerlink" title="数据字典"></a>数据字典</h2><p>数据字典（Data Dictionary，简称DD）就是用来定义数据流图中的各个成分的具体含义的，它以一种准确的、无二义性的说明方式为系统的分析、设计及维护提供了有关元素的一致的定义和详细的描述。它和数据流图共同构成了系统的逻辑模型，是需求规格说明书的主要组成部分。</p>
+<h2 id="软件设计阶段"><a href="#软件设计阶段" class="headerlink" title="软件设计阶段"></a>软件设计阶段</h2><p>软件设计阶段任务：设计软件系统结构、数据结构及数据库设计、编写概要设计文档、概要设计文档评审。<br>    其中，在数据结构及数据库设计任务中，需要结合算法设计，确定算法所必需的逻辑数据结构及其操作。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/22/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" data-id="cl2ac8k08000mscg064j79ra0" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-软件测试" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/22/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/" class="article-date">
+  <time class="dt-published" datetime="2022-04-22T11:16:09.539Z" itemprop="datePublished">2022-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="软件测试"><a href="#软件测试" class="headerlink" title="软件测试"></a>软件测试</h1><p>单元测试主要针对模块的下列五项基本特性：</p>
+<p>1、模块的接口测试</p>
+<p>2、局部数据结构测试</p>
+<p>3、重要执行路径测试</p>
+<p>4、出错处理测试</p>
+<p>5、影响以上节点及其他相关点的边界条件测试</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/22/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/" data-id="cl2ac8k0b000pscg0e5gzh82z" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-模板" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/22/%E6%A8%A1%E6%9D%BF/" class="article-date">
+  <time class="dt-published" datetime="2022-04-22T11:16:09.392Z" itemprop="datePublished">2022-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><font color=#999AAA >提示：这里对文章进行总结：<br>例如：以上就是今天要讲的内容，本文仅仅简单介绍了pandas的使用，<br>而pandas提供了大量能使我们快速便捷地处理数据的函数和方法</p>
+<blockquote>
+<p>本次的博文章就写到这，希望大家喜欢😁😁😁<br>如果文章知识点有错误的地方，请指正！和大家一起学一起进步	<br>如果感觉博主的文章还不错的话，请👍三连支持👍一下博主哦</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/22/%E6%A8%A1%E6%9D%BF/" data-id="cl2ac8k04000hscg052sx8yxq" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-结构化程序设计" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/22/%E7%BB%93%E6%9E%84%E5%8C%96%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="article-date">
+  <time class="dt-published" datetime="2022-04-22T11:16:09.270Z" itemprop="datePublished">2022-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="结构化程序设计"><a href="#结构化程序设计" class="headerlink" title="结构化程序设计"></a>结构化程序设计</h1><p> 结构化程序设计原则强调的是：</p>
+<p>自顶向下</p>
+<p>逐步求精</p>
+<p>模块化</p>
+<p>限制使用goto语句</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/22/%E7%BB%93%E6%9E%84%E5%8C%96%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" data-id="cl2ac8k07000lscg09bke11b4" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-错误" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/22/%E9%94%99%E8%AF%AF/" class="article-date">
+  <time class="dt-published" datetime="2022-04-22T11:16:08.352Z" itemprop="datePublished">2022-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>错误</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">&quot;D:\Program Files\Java\jdk1.8.0_301\bin\java.exe&quot; -ea -Didea.test.cyclic.buffer.size=1048576 &quot;-javaagent:D:\program files\JetBrains\IntelliJ IDEA 2020.3.4\lib\idea_rt.jar=60517:D:\program files\JetBrains\IntelliJ IDEA 2020.3.4\bin&quot; -Dfile.encoding=UTF-8 -classpath &quot;D:\program files\JetBrains\IntelliJ IDEA 2020.3.4\lib\idea_rt.jar;D:\program files\JetBrains\IntelliJ IDEA 2020.3.4\plugins\junit\lib\junit5-rt.jar;D:\program files\JetBrains\IntelliJ IDEA 2020.3.4\plugins\junit\lib\junit-rt.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\charsets.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\deploy.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\ext\access-bridge-64.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\ext\cldrdata.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\ext\dnsns.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\ext\jaccess.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\ext\jfxrt.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\ext\localedata.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\ext\nashorn.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\ext\sunec.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\ext\sunjce_provider.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\ext\sunmscapi.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\ext\sunpkcs11.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\ext\zipfs.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\javaws.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\jce.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\jfr.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\jfxswt.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\jsse.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\management-agent.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\plugin.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\resources.jar;D:\program files\Java\jdk1.8.0_301\jre\lib\rt.jar;E:\JetBrains\mybatis学习\Mybatis-study\Mybatis-01\target\test-classes;E:\JetBrains\mybatis学习\Mybatis-study\Mybatis-01\target\classes;D:\java\maven-3.8.1-bin\apache-maven-3.8.1\maven_repository\mysql\mysql-connector-java\5.1.5\mysql-connector-java-5.1.5.jar;D:\java\maven-3.8.1-bin\apache-maven-3.8.1\maven_repository\junit\junit\4.13\junit-4.13.jar;D:\java\maven-3.8.1-bin\apache-maven-3.8.1\maven_repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;D:\java\maven-3.8.1-bin\apache-maven-3.8.1\maven_repository\org\mybatis\mybatis\3.5.7\mybatis-3.5.7.jar&quot; com.intellij.rt.junit.JUnitStarter -ideVersion5 asia.xiaojiang.mybatis.dao.UserDaoTest</span><br><span class="line"></span><br><span class="line">java.lang.ExceptionInInitializerError</span><br><span class="line">	at asia.xiaojiang.mybatis.dao.UserDaoTest.Test(UserDaoTest.java:18)</span><br><span class="line">	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)</span><br><span class="line">	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)</span><br><span class="line">	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)</span><br><span class="line">	at java.lang.reflect.Method.invoke(Method.java:498)</span><br><span class="line">	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)</span><br><span class="line">	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)</span><br><span class="line">	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)</span><br><span class="line">	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)</span><br><span class="line">	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)</span><br><span class="line">	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)</span><br><span class="line">	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)</span><br><span class="line">	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)</span><br><span class="line">	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)</span><br><span class="line">	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)</span><br><span class="line">	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)</span><br><span class="line">	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)</span><br><span class="line">	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)</span><br><span class="line">	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)</span><br><span class="line">	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)</span><br><span class="line">	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)</span><br><span class="line">	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)</span><br><span class="line">	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)</span><br><span class="line">	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)</span><br><span class="line">	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)</span><br><span class="line">	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)</span><br><span class="line">Caused by: org.apache.ibatis.exceptions.PersistenceException: </span><br><span class="line">### Error building SqlSession.</span><br><span class="line">### The error may exist in org/mybatis/example/BlogMapper.xml</span><br><span class="line">### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource org/mybatis/example/BlogMapper.xml</span><br><span class="line">	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)</span><br><span class="line">	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)</span><br><span class="line">	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)</span><br><span class="line">	at asia.xiaojiang.mybatis.utils.MybatisUtils.&lt;clinit&gt;(MybatisUtils.java:26)</span><br><span class="line">	... 26 more</span><br><span class="line">Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource org/mybatis/example/BlogMapper.xml</span><br><span class="line">	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:122)</span><br><span class="line">	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)</span><br><span class="line">	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)</span><br><span class="line">	... 28 more</span><br><span class="line">Caused by: java.io.IOException: Could not find resource org/mybatis/example/BlogMapper.xml</span><br><span class="line">	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114)</span><br><span class="line">	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100)</span><br><span class="line">	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:376)</span><br><span class="line">	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:120)</span><br><span class="line">	... 30 more</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220303182446287.png" alt="image-20220303182446287"></p>
+<p>二资源过滤问题</p>
+<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220303183011605.png" alt="image-20220303183011605"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/22/%E9%94%99%E8%AF%AF/" data-id="cl2ac8k0c000qscg06q5najqn" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-x 值得注意的是添加用户是必须提交事务，这样才能真正的的提交到数据库，否则，虽然在控制台看到提交成功，但是 数据库里没有" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/22/x%20%E5%80%BC%E5%BE%97%E6%B3%A8%E6%84%8F%E7%9A%84%E6%98%AF%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7%E6%98%AF%E5%BF%85%E9%A1%BB%E6%8F%90%E4%BA%A4%E4%BA%8B%E5%8A%A1%EF%BC%8C%E8%BF%99%E6%A0%B7%E6%89%8D%E8%83%BD%E7%9C%9F%E6%AD%A3%E7%9A%84%E7%9A%84%E6%8F%90%E4%BA%A4%E5%88%B0%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%8C%E5%90%A6%E5%88%99%EF%BC%8C%E8%99%BD%E7%84%B6%E5%9C%A8%E6%8E%A7%E5%88%B6%E5%8F%B0%E7%9C%8B%E5%88%B0%E6%8F%90%E4%BA%A4%E6%88%90%E5%8A%9F%EF%BC%8C%E4%BD%86%E6%98%AF%20%E6%95%B0%E6%8D%AE%E5%BA%93%E9%87%8C%E6%B2%A1%E6%9C%89/" class="article-date">
+  <time class="dt-published" datetime="2022-04-22T11:16:08.215Z" itemprop="datePublished">2022-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line"></span><br><span class="line">值得注意的是添加用户是必须提交事务，这样才能真正的的提交到数据库，</span><br><span class="line">否则，虽然在控制台看到提交成功，但是 数据库里没有</span><br><span class="line"></span><br><span class="line"> */</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/22/x%20%E5%80%BC%E5%BE%97%E6%B3%A8%E6%84%8F%E7%9A%84%E6%98%AF%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7%E6%98%AF%E5%BF%85%E9%A1%BB%E6%8F%90%E4%BA%A4%E4%BA%8B%E5%8A%A1%EF%BC%8C%E8%BF%99%E6%A0%B7%E6%89%8D%E8%83%BD%E7%9C%9F%E6%AD%A3%E7%9A%84%E7%9A%84%E6%8F%90%E4%BA%A4%E5%88%B0%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%8C%E5%90%A6%E5%88%99%EF%BC%8C%E8%99%BD%E7%84%B6%E5%9C%A8%E6%8E%A7%E5%88%B6%E5%8F%B0%E7%9C%8B%E5%88%B0%E6%8F%90%E4%BA%A4%E6%88%90%E5%8A%9F%EF%BC%8C%E4%BD%86%E6%98%AF%20%E6%95%B0%E6%8D%AE%E5%BA%93%E9%87%8C%E6%B2%A1%E6%9C%89/" data-id="cl2ac8jzr0007scg0edqshppi" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/04/22/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/22/%E5%BE%AA%E7%8E%AF%E9%98%9F%E5%88%97%E9%98%9F%E5%88%97%E4%B8%AD%E7%9A%84%E5%85%83%E7%B4%A0%E4%B8%AA%E6%95%B0%E7%9A%84%E8%AE%A1%E7%AE%97/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/22/%E7%BA%BF%E6%80%A7%E8%A1%A8%E5%8F%8A%E5%85%B6%E9%A1%BA%E5%BA%8F%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/22/%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%AC%94%E8%AE%B0/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/22/%E7%AE%97%E6%B3%95%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
